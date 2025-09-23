@@ -23,31 +23,32 @@ int main()
     srand(time(NULL));
 
     int num_secreto = aleatoriza(1,100);
-    int num_digitado;
+    int num_digitado, i = 1;
 
     do {
         printf("Adivinhe o numero que estou pensando!\n");
+        printf("Contarei e exibirei o numero de tentativas.\n");
         printf("Darei dicas quando necessario.\n");
         printf("Digite um numero: ");
         scanf("%d", &num_digitado);
         getchar();
 
         if(num_digitado < num_secreto) {
-            printf("Dica: o numero que estou pensando e maior que %d.", num_digitado);
-
+            printf("Dica: o numero que estou pensando e maior que %d.\n", num_digitado);
+            printf("Numero de tentativas: %d", i++);
             getchar();
 
             limparTela();
         } else if(num_digitado > num_secreto) {
 
-            printf("Dica: o numero que estou pensando e menor que %d.", num_digitado);
-
+            printf("Dica: o numero que estou pensando e menor que %d.\n", num_digitado);
+            printf("Numero de tentativas: %d", i++);
             getchar();
 
             limparTela();
         } else {
-            printf("Voce ganhou!");
-
+            printf("Voce ganhou!\n");
+            printf("Total de tentativas: %d", i++);
             getchar();
 
             limparTela();
