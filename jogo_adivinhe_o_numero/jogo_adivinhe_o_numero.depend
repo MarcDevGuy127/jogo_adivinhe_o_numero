@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1758592520 source:c:\users\marcelo silva\desktop\repositorio_git\jogo_adivinhe_o_numero\jogo_adivinhe_o_numero\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
